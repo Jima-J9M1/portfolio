@@ -11,7 +11,7 @@ const [selectedId, setSelectedId] = useState(null)
 return(
     <>
     {project.map((project:any) => (
-      <motion.div layoutId={project.id} onClick={() => setSelectedId(project.id)}>
+      <motion.div layoutId={project.id} onClick={() => setSelectedId(project.id)} key={project.id}>
         <motion.h5>{project.subtitle}</motion.h5>
         <motion.h2>{project.title}</motion.h2>
       </motion.div>

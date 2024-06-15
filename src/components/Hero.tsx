@@ -24,7 +24,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="flex items-center justify-between">
           <div className="text-white dark:text-white">
-            <h1 className="text-4xl font-bold dark:text-white">I'M <span className='text-6xl text-[#FFC86B]'>JIMA DUBE</span></h1>
+            <h1 className="text-4xl font-bold dark:text-white">I&apos;M <span className='text-6xl text-[#FFC86B]'>JIMA DUBE</span></h1>
             <p className="text-4xl font-bold">PYTHON EXPERT</p>
           </div>
           <div className="relative">
