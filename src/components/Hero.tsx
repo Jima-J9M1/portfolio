@@ -1,5 +1,6 @@
 "use client"
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import {  useState } from 'react';
 import { FaInstagram, FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
 
@@ -28,7 +29,7 @@ const Hero = () => {
             <p className="text-4xl font-bold">PYTHON EXPERT</p>
           </div>
           <div className="relative">
-            <img src="/images/hero-image.svg" alt="Profile" className=" w-[800px]  h-[500px]  scale-150" />
+            <Image src="/images/hero-image.svg" alt="Profile" className=" w-[800px]  h-[500px]  scale-150" />
             <div className="absolute bottom-[70px] right-[195px] flex flex-col space-y-2">
             <div className="ml-[7px]">
             <div className="w-[2px] h-24 bg-yellow-400"></div>

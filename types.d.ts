@@ -1,4 +1,4 @@
-export interface projectProps {
+export type ProjectProps = {
     id:number,
     title:string,
     description:string,
