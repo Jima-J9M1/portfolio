@@ -35,9 +35,9 @@ function RelatedProjects() {
 			</p>
 
 			<div className="grid grid-cols-1 sm:grid-cols-4 gap-10 ">
-				{RelatedProject.Projects.map((project) => {
+				{RelatedProject.Projects.map((project, index) => {
 					return (
-						<div className='w-[300px] h-[200px]'>
+						<div className='w-[300px] h-[200px]' key={index}>
 						<Image
 							src={project.img}
 							className="rounded-xl cursor-pointer border shadow-md w-full h-full"
@@ -45,7 +45,6 @@ function RelatedProjects() {
 							height={500}
 							alt={project.title}
 							key={project.id}
-							cl
 						/>
 						</div>
 					);
