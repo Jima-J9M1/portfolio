@@ -7,22 +7,22 @@ const RelatedProject = {
 		{
 			id: uuidv4(),
 			title: 'Mobile UI',
-			img: '/images/ui-project-2.jpg',
+			img: '/images/ecommerce-web-2.jpg',
 		},
 		{
 			id: uuidv4(),
 			title: 'Web Application',
-			img: '/images/mobile-project-1.jpg',
+			img: '/images/health-1.png',
 		},
 		{
 			id: uuidv4(),
 			title: 'UI Design',
-			img: '/images/web-project-1.jpg',
+			img: '/images/digital-finance-1.jpg',
 		},
 		{
 			id: uuidv4(),
 			title: 'Kabul Mobile App UI',
-			img: '/images/mobile-project-2.jpg',
+			img: '/images/lms-2.jpg',
 		},
 	],
 };
@@ -34,17 +34,20 @@ function RelatedProjects() {
 				{RelatedProject.title}
 			</p>
 
-			<div className="grid grid-cols-1 sm:grid-cols-4 gap-10">
+			<div className="grid grid-cols-1 sm:grid-cols-4 gap-10 ">
 				{RelatedProject.Projects.map((project) => {
 					return (
+						<div className='w-[300px] h-[200px]'>
 						<Image
 							src={project.img}
-							className="rounded-xl cursor-pointer"
-							width="400"
-							height="400"
+							className="rounded-xl cursor-pointer border shadow-md w-full h-full"
+							width={500}
+							height={500}
 							alt={project.title}
 							key={project.id}
+							cl
 						/>
+						</div>
 					);
 				})}
 			</div>
