@@ -128,13 +128,19 @@ function AppHeader() {
 						</Link>
 					</div>
 					<div className="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark">
-						<button
+						{/* <button
 							onClick={showHireMeModal}
 							className="font-general-medium sm:hidden block text-left text-md bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-sm px-4 py-2 mt-2 duration-300 w-24"
 							aria-label="Hire Me Button"
+						> */}
+					<Link
+							href={"https://www.linkedin.com/in/jima-dube"}
+							className="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
+							aria-label="Hire Me Button"
 						>
 							Hire Me
-						</button>
+						</Link>
+						{/* </button> */}
 					</div>
 				</div>
 
@@ -164,13 +170,13 @@ function AppHeader() {
 				{/* Header right section buttons */}
 				<div className="hidden sm:flex justify-between items-center flex-col md:flex-row">
 					<div className="hidden md:flex">
-						<button
-							onClick={showHireMeModal}
+						<Link
+							href={"https://www.linkedin.com/in/jima-dube"}
 							className="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
 							aria-label="Hire Me Button"
 						>
 							Hire Me
-						</button>
+						</Link>
 					</div>
 
 					{/* Theme switcher large screen */}
